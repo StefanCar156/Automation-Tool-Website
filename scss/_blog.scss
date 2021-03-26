@@ -1,0 +1,270 @@
+.blog__hero {
+  background: url(../img/blog-hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  padding: 50px 0;
+  margin: 130px 0 56px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 44px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  &__paragraph {
+    max-width: 780px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 300;
+  }
+}
+
+.search {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 24px 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+
+  &__icon {
+    margin-right: 24px;
+  }
+  &__input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    line-height: 19px;
+    color: $title-blue;
+
+    &::placeholder {
+      color: rgba(31, 63, 104, 0.6);
+      text-transform: capitalize;
+    }
+  }
+}
+
+// Mixins
+@mixin postsTitle {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  color: rgba(53, 109, 173, 0.8);
+  margin-bottom: 32px;
+}
+
+@mixin articleTitle {
+  font-family: $playfair;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.04em;
+  color: $title-blue;
+  margin-bottom: 16px;
+}
+
+@mixin articleParagraph {
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+
+@mixin articleAuthor {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: $title-blue;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+@mixin articleDate {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+@mixin articleCta {
+  button {
+    &:first-of-type {
+      margin-right: 32px;
+    }
+  }
+}
+
+.popular {
+  width: 70%;
+  margin: 56px auto 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  &__title {
+    @include postsTitle;
+  }
+  &__articles {
+    display: grid;
+    grid-template-areas:
+      "box-1 box-1 box-1"
+      "box-2 box-3 box-4";
+    grid-gap: 33px 20px;
+
+    .article {
+      display: flex;
+      flex-direction: column;
+
+      &__img {
+        margin-bottom: 16px;
+      }
+      &__title {
+        @include articleTitle;
+      }
+      &__paragraph {
+        @include articleParagraph;
+      }
+      &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &__author {
+        @include articleAuthor;
+      }
+      &__date {
+        @include articleDate;
+      }
+      &__cta {
+        @include articleCta;
+      }
+
+      &:nth-of-type(1) {
+        grid-area: box-1;
+        flex-direction: row;
+
+        .article {
+          &__text {
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          &__title {
+            font-family: $playfair;
+            font-size: 48px;
+            line-height: 58px;
+            letter-spacing: 0.04em;
+            color: $poppins;
+          }
+        }
+      }
+      &:nth-of-type(2) {
+        grid-area: box-2;
+      }
+      &:nth-of-type(3) {
+        grid-area: box-3;
+      }
+      &:nth-of-type(4) {
+        grid-area: box-4;
+      }
+    }
+  }
+  &__btn {
+    margin-top: 54px;
+    align-self: flex-end;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: rgba(53, 109, 173, 0.8);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+}
+
+.posts {
+  width: 70%;
+  margin: 56px auto 96px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    @include postsTitle;
+    margin-bottom: 16px;
+  }
+  &__articles {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 56px;
+
+    .article {
+      display: flex;
+      margin: 16px 0;
+
+      &__text {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      &__title {
+        @include articleTitle;
+      }
+      &__paragraph {
+        @include articleParagraph;
+      }
+      &__info {
+        display: flex;
+        align-items: center;
+      }
+      &__author {
+        @include articleAuthor;
+      }
+      &__date {
+        @include articleDate;
+      }
+      &__cta {
+        margin-left: 98px;
+        @include articleCta;
+      }
+    }
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #356ead;
+    text-transform: capitalize;
+    font-weight: 600;
+
+    img {
+      margin-right: 16px;
+    }
+    &:last-of-type {
+      img {
+        margin-left: 16px;
+        margin-right: 0;
+      }
+    }
+  }
+}

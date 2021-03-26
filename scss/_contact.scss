@@ -1,0 +1,134 @@
+// Mixins
+
+@mixin infoTitle {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: $title-blue;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.contact {
+  width: 70%;
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__img {
+    align-self: center;
+    margin-bottom: 71px;
+  }
+  &__address {
+    margin-bottom: 40px;
+    h5 {
+      @include infoTitle;
+    }
+    p {
+      max-width: 299px;
+
+      line-height: 26px;
+      letter-spacing: 0.04em;
+      color: rgba(31, 63, 104, 0.6);
+      font-weight: 300;
+    }
+  }
+  &__phone,
+  &__online {
+    margin-bottom: 40px;
+    h5 {
+      @include infoTitle;
+    }
+    p {
+      line-height: 26px;
+      letter-spacing: 0.04em;
+      color: #1f3f68;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+
+      &:first-of-type {
+        margin-bottom: 16px;
+      }
+
+      img {
+        margin-right: 16px;
+      }
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 56px;
+    background: #ffffff;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+
+    .form {
+      &__title {
+        @include infoTitle;
+        margin-bottom: 48px;
+      }
+      &__label {
+        width: 428px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+
+        span {
+          line-height: 30px;
+          letter-spacing: 0.04em;
+          color: rgba(31, 63, 104, 0.8);
+          text-transform: capitalize;
+          margin-bottom: 8px;
+        }
+      }
+      &__input {
+        padding: 21px 36px;
+
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #1f3f68;
+        text-transform: capitalize;
+        border-radius: 10px;
+        border: 1px solid rgba(53, 109, 173, 0.4);
+        outline: none;
+
+        &::placeholder {
+          opacity: 0.2;
+        }
+      }
+      &__textarea {
+        resize: none;
+        height: 144px;
+        margin-bottom: 40px;
+      }
+      &__btn {
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #fff;
+        background: #5a98d0;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+        border-radius: 10px;
+        padding: 23px 0;
+        border: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.map {
+  margin: 96px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
