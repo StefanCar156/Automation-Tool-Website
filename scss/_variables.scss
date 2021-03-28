@@ -1,8 +1,20 @@
 // Fonts
-
 $playfair: "Playfair Display", serif;
 $poppins: "Poppins", sans-serif;
 
 // Colors
-
 $title-blue: #1f3f68;
+$btn-blue: #5a98d0;
+
+// Font Weights
+$font-weights: (
+  "thin": 300,
+  "regular": 400,
+  "medium": 500,
+  "semi-bold": 600,
+  "bold": 700,
+);
+
+@function weight($weight-key) {
+  @return map-get($font-weights, $weight-key);
+}

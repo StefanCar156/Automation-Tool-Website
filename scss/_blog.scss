@@ -14,7 +14,7 @@
     font-size: 44px;
     line-height: 74px;
     letter-spacing: 0.04em;
-    font-weight: 500;
+    font-weight: weight(medium);
     margin-bottom: 16px;
   }
   &__paragraph {
@@ -24,7 +24,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.4);
-    font-weight: 300;
+    font-weight: weight(thin);
   }
 }
 
@@ -61,7 +61,7 @@
   font-size: 20px;
   line-height: 25px;
   letter-spacing: 0.04em;
-  font-weight: 500;
+  font-weight: weight(medium);
   color: rgba(53, 109, 173, 0.8);
   margin-bottom: 32px;
 }
@@ -80,7 +80,7 @@
   letter-spacing: 0.04em;
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 16px;
-  font-weight: 300;
+  font-weight: weight(thin);
 }
 
 @mixin articleAuthor {
@@ -88,7 +88,7 @@
   line-height: 24px;
   letter-spacing: 0.04em;
   color: $title-blue;
-  font-weight: 500;
+  font-weight: weight(medium);
   margin-bottom: 4px;
 }
 
@@ -103,6 +103,9 @@
   button {
     &:first-of-type {
       margin-right: 32px;
+    }
+    img {
+      width: 100%;
     }
   }
 }
@@ -168,7 +171,6 @@
             font-size: 48px;
             line-height: 58px;
             letter-spacing: 0.04em;
-            color: $poppins;
           }
         }
       }
@@ -190,7 +192,7 @@
     letter-spacing: 0.04em;
     color: rgba(53, 109, 173, 0.8);
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: weight(medium);
     margin-bottom: 24px;
   }
 }
@@ -213,6 +215,7 @@
     .article {
       display: flex;
       margin: 16px 0;
+      align-items: center;
 
       &__text {
         margin-left: 20px;
@@ -255,7 +258,7 @@
     letter-spacing: 0.04em;
     color: #356ead;
     text-transform: capitalize;
-    font-weight: 600;
+    font-weight: weight(semi-bold);
 
     img {
       margin-right: 16px;
@@ -268,3 +271,6 @@
     }
   }
 }
+
+// Responsive
+@import "./blog-responsive";

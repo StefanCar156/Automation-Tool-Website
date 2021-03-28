@@ -1,0 +1,116 @@
+@media screen and (max-width: 1250px) {
+  .contact {
+    &__img {
+      width: 80%;
+    }
+    &__form {
+      padding: 35px 45px;
+
+      .form {
+        &__title {
+          margin-bottom: 30px;
+        }
+        &__label {
+          width: 300px;
+        }
+        &__input {
+          padding: 15px 26px;
+        }
+        &__textarea {
+          margin-bottom: 20px;
+        }
+        &__btn {
+          padding: 15px 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact {
+    flex-direction: column;
+
+    &__info {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    &__img {
+      width: 280px;
+    }
+    &__form {
+      width: 100%;
+      padding: 56px;
+
+      .form {
+        &__label {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .map {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    &__info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact {
+    &__info {
+      p {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+    &__img {
+      width: 200px;
+      margin-bottom: 30px;
+    }
+    &__form {
+      padding: 20px;
+
+      .form {
+        &__title {
+          font-size: 14px;
+          margin-bottom: 16px;
+        }
+        &__label {
+          margin-bottom: 16px;
+          span {
+            font-size: 12px;
+          }
+        }
+        &__input {
+          padding: 8px 12px;
+          font-size: 12px;
+        }
+        &__btn {
+          font-size: 12px;
+          padding: 8px 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    display: none;
+  }
+}

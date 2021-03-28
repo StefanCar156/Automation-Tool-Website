@@ -1,0 +1,575 @@
+@media screen and (max-width: 1250px) {
+  .hero {
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+  .about {
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  .projects {
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    &__paragraph {
+      line-height: 24px;
+    }
+  }
+  .clients {
+    &__top {
+      justify-content: space-between;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    &__paragraph {
+      margin-left: 0;
+      width: 450px;
+    }
+    &__table {
+      li {
+        font-size: 18px;
+        line-height: 36px;
+      }
+    }
+  }
+  .footer {
+    &__top {
+      justify-content: space-between;
+      padding-right: 5vw;
+    }
+    &__text {
+      margin-left: 5vw;
+      margin-right: 0;
+    }
+    &__main {
+      margin-left: 0;
+      padding: 0 5vw;
+    }
+    &__copyright {
+      margin-left: 5vw;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    &__title {
+      font-size: 36px;
+      line-height: 42px;
+    }
+    &__paragraph {
+      line-height: 22px;
+    }
+  }
+  .about {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+    &__title {
+      font-size: 26px;
+      line-height: 32px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    &__articles {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .article {
+        margin: 30px 0;
+        &:nth-of-type(1) {
+          margin-bottom: 30px;
+        }
+        &:nth-of-type(2) {
+          position: static;
+          transform: none;
+        }
+        &__img {
+          height: 100px;
+        }
+        &__title {
+          font-size: 18px;
+          line-height: 26px;
+          text-align: center;
+        }
+        &__paragraph {
+          font-size: 14px;
+          line-height: 22px;
+          text-align: justify;
+        }
+        &__btn {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+  .projects {
+    margin: 100px auto;
+    &__top {
+      flex-direction: column;
+    }
+    &__title {
+      margin-bottom: 30px;
+      font-size: 26px;
+      line-height: 32px;
+      max-width: none;
+    }
+    &__articles {
+      grid-gap: 20px 12px;
+      .article {
+        &__title {
+          font-size: 22px;
+          line-height: 32px;
+        }
+        &__subtitle {
+          line-height: 26px;
+        }
+      }
+    }
+  }
+  .clients {
+    &__top {
+      flex-direction: column;
+      align-items: center;
+      margin: 80px 0;
+    }
+    &__title {
+      font-size: 26px;
+      line-height: 32px;
+      max-width: none;
+      margin-bottom: 30px;
+    }
+    &__paragraph {
+      width: 100%;
+      max-width: none;
+      text-align: center;
+    }
+    &__table {
+      li {
+        font-size: 16px;
+        line-height: 30px;
+        padding: 15px 20px;
+      }
+    }
+  }
+  .footer {
+    &__title {
+      font-size: 26px;
+      line-height: 32px;
+    }
+    &__paragraph {
+      line-height: 22px;
+    }
+    &__btn {
+      min-width: 200px;
+      padding: 15px 40px;
+      text-align: center;
+    }
+    &__logo {
+      font-size: 24px;
+    }
+    &__contact {
+      li {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+    &__links {
+      margin-left: 50px;
+    }
+    &__list {
+      &:first-of-type {
+        margin-right: 30px;
+      }
+    }
+    &__heading {
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: 80px;
+  }
+  .nav {
+    &__logo {
+      width: 40px;
+    }
+    &__links {
+      right: 15vw;
+      li {
+        margin: 0 15px;
+      }
+    }
+    &__link {
+      font-size: 14px;
+    }
+  }
+  .hero {
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+
+    &__text {
+      align-items: center;
+      text-align: center;
+    }
+    &__title {
+      font-size: 26px;
+      line-height: 32px;
+    }
+    &__paragraph {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    &__btn {
+      margin: 0 auto;
+    }
+    &__img {
+      min-width: 80%;
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+  .about {
+    &__title {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+  .projects {
+    &__top {
+      align-items: center;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+    &__paragraph {
+      text-align: center;
+      font-size: 14px;
+    }
+    &__articles {
+      .article {
+        &__info {
+          top: 10px;
+          left: 10px;
+        }
+        &__title {
+          font-size: 14px;
+          line-height: 22px;
+          margin-bottom: 0;
+        }
+        &__subtitle {
+          font-size: 10px;
+          line-height: 16px;
+        }
+        &:nth-of-type(1) {
+          .article__info {
+            top: 10px;
+            right: 10px;
+            left: auto;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+  .clients {
+    padding: 0 2.5vw;
+    &__title {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+    &__paragraph {
+      font-size: 14px;
+      max-width: 380px;
+    }
+    &__table {
+      margin: 0 auto 60px;
+      max-width: 600px;
+      li {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    border-radius: 0;
+
+    &__top {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      padding: 0;
+    }
+    &__text {
+      margin: 60px auto 30px;
+      width: 80%;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 30px;
+      margin: 0 auto 20px;
+    }
+    &__paragraph {
+      font-size: 14px;
+    }
+    &__btn {
+      margin-bottom: 40px;
+    }
+    &__main {
+      flex-direction: column;
+      align-items: center;
+      margin: 40px auto;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__contact {
+      li {
+        justify-content: center;
+        span {
+          display: none;
+        }
+      }
+    }
+    &__links {
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+    }
+    &__list {
+      margin: 30px auto 0 !important;
+      text-align: center;
+
+      li {
+        margin: 5px 0;
+      }
+    }
+    &__heading {
+      margin-bottom: 20px;
+    }
+    &__copyright {
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .header--fixed {
+    position: fixed;
+    z-index: 5;
+  }
+  .nav {
+    &__links {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+      background-color: #fff;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+      transform: translateX(100%);
+      transition: all 0.4s ease-in;
+
+      &--active {
+        transform: translateX(0);
+        visibility: visible;
+      }
+
+      li {
+        margin: 20px 0;
+      }
+    }
+    &__link {
+      font-size: 22px;
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+      width: 36px;
+
+      img {
+        pointer-events: none;
+        width: 100%;
+      }
+    }
+  }
+  .hero {
+    &__title {
+      font-size: 22px;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+    &__paragraph {
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 20px;
+    }
+    &__btn {
+      font-size: 12px;
+      width: 180px;
+      height: 40px;
+    }
+  }
+  .about {
+    &__title {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+    &__articles {
+      .article {
+        padding: 24px;
+        &__img {
+          height: 80px;
+          margin-bottom: 20px;
+        }
+        &__title {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        &__paragraph {
+          font-size: 10px;
+          line-height: 16px;
+          margin-bottom: 20px;
+        }
+        &__btn {
+          font-size: 12px;
+
+          img {
+            width: 12px;
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+  }
+  .projects {
+    margin: 60px auto;
+
+    &__top {
+      margin-bottom: 50px;
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+    &__paragraph {
+      font-style: 12px;
+      line-height: 18px;
+    }
+    &__articles {
+      .article {
+        &__title {
+          font-size: 10px;
+          line-height: 18px;
+        }
+        &__subtitle {
+          font-size: 8px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  .clients {
+    border-radius: 0;
+
+    &__top {
+      margin: 40px 0;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &__paragraph {
+      font-size: 12px;
+      line-height: 18px;
+      width: 80%;
+    }
+    &__table {
+      grid-template-columns: repeat(2, auto);
+
+      li {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+  .footer {
+    &__text {
+      margin: 40px auto 30px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &__paragraph {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &__btn {
+      font-size: 12px;
+      width: 180px;
+      height: 40px;
+    }
+    &__main {
+      margin-bottom: 0;
+    }
+    &__logo {
+      font-size: 20px;
+
+      img {
+        width: 40px;
+      }
+    }
+    &__contact {
+      li {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 15px;
+      }
+    }
+    &__heading {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    &__link {
+      font-size: 12px;
+    }
+    &__copyright {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    display: none;
+  }
+}
